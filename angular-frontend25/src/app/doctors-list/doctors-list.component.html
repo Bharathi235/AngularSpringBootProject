@@ -1,0 +1,33 @@
+
+      <!--<input type="text" ng-model="patients1" id="id"/>
+      <button btn btn-primary hidden-xs (click) = "findPatientsById(id)">Search</button>
+      -->
+      <h2> Doctor List</h2>
+      <table class = "table table-striped">
+          <thead>
+              <tr>
+                <th>name</th> 
+               <th>age</th>
+               <th>specializedin</th>
+               <th>patients</th>
+               <th>isAvailable</th>
+               <th>emailId</th>
+               <th>avilabletime</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor = "let doctors of doctors1">
+                  <td>{{ doctors.name }} </td>
+                  <td>{{ doctors.age}} </td>
+                  <td>{{ doctors.specializedin }}  </td>
+                  <td>{{ doctors.patients}}  
+                  </td>
+                  <td>{{ doctors.isAvailable }}  </td>
+                  <td>{{ doctors.emailId }}  </td>
+                  <td>{{ doctors.avilabletime }}  </td>
+                  <td> </td>
+                  <td> </td>
+                  </tr>
+                  </tbody> 
+                  </table>
+      
